@@ -107,8 +107,10 @@ h1::after{
 }
 
 .catalog-card__hover{
-    display: flex;
-    justify-content: end;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .7);
+    padding: 20px 0;
+    font-weight: 700;
     display: none;
 }
 
@@ -119,4 +121,11 @@ h1::after{
 
 .catalog-card:hover{
     transform: scale(1.15);
+}
+
+.catalog-card:hover .catalog-card__hover{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
 }
