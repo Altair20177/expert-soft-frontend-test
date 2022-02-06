@@ -92,6 +92,7 @@ h1::after{
     background-color: rgba(103, 106, 255, 0.7);
     font-size: 20px;
     display: inline-block;
+    z-index: 5;
 }
 
 .catalog-card__name,
@@ -119,12 +120,13 @@ h1::after{
     opacity: 0;
 }
 
-.catalog-card img{
+.catalog-card__image{
     height: 100%;
     width: auto;
+    transition: 0.2s;
 }
 
-.catalog-card:hover{
+.catalog-card:hover .catalog-card__image{
     transform: scale(1.15);
 }
 
